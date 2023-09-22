@@ -1,4 +1,4 @@
-/* Based on https://sites.super.so/em/style.css */
+/* See https://sites.super.so/em/style.css */
 
 * {
     text-decoration: none !important;
@@ -22,34 +22,34 @@ iframe {
 }
 
 .max-width {
-    max-width: 1000px !important;
+    max-width: 1024px !important;
 }
 
 .super-content {
-    padding-bottom: 50px !important;
+    padding-bottom: 56px !important;
 }
 
 .notion-header__cover.no-cover {
-    max-height: 180px !important;
-    height: 180px !important;
+    max-height: 160px !important;
+    height: 160px !important;
 }
 
 .notion-text__content {
     padding: 0 2px 24px !important;
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 2 !important;
 }
 
 h1 {
-    font-weight: 300 !important;
-    font-size: 16px !important;
+    font-size: 48px !important;
 }
 
 h2 {
-    line-height: 1.6 !important;
-    font-weight: 300 !important;
-    font-size: 48px !important;
-    max-width: 90% !important;
+    font-size: 40px !important;
+}
+
+h3 {
+    font-size: 32px !important;
 }
 
 .notion-collection-gallery {
@@ -86,8 +86,8 @@ h2 {
 }
 
 .notion-property__title {
-    padding: 0 10px 10px 10px !important;
-    font-size: 30px !important;
+    padding: 0 0 12px !important;
+    font-size: 24px !important;
 }
 
 .notion-property__file {
@@ -96,7 +96,7 @@ h2 {
     align-items: center !important;
     position: absolute !important;
     display: flex !important;
-    padding: 54px !important;
+    padding: 48px !important;
     height: 100% !important;
     right: 0 !important;
     top: 0 !important;
@@ -116,10 +116,6 @@ h2 {
     opacity: 1 !important;
 }
 
-.notion-embed {
-    margin: -40px auto !important;
-}
-
 .notion-collection-list {
     border: 1px solid var(--color-border) !important;
     align-items: center !important;
@@ -135,7 +131,7 @@ h2 {
     justify-content: center !important;
     position: relative !important;
     border-radius: 0 !important;
-    padding: 30px !important;
+    padding: 32px !important;
     margin: 0 !important;
 }
 
@@ -173,8 +169,16 @@ h2 {
 
 @media (max-width: 600px) {
 
-    h2 {
+    h1 {
         font-size: 40px !important;
+    }
+    
+    h2 {
+        font-size: 32px !important;
+    }
+    
+    h3 {
+        font-size: 24px !important;
     }
 
     .notion-collection-gallery {
@@ -186,7 +190,7 @@ h2 {
     }
 
     .notion-property__title {
-        font-size: 24px !important;
+        font-size: 20px !important;
     }
 
     .notion-property__file {
@@ -207,6 +211,8 @@ h2 {
     }
 
 }
+
+/* @todo Delete? Not sure what these do */
 
 #block-bcdb396c1ef74989bef292d6fce94b5e .notion-caption {
     display: none !important;
