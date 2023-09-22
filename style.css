@@ -30,8 +30,12 @@ iframe {
 }
 
 .notion-header__cover.no-cover {
-    max-height: 160px !important;
-    height: 160px !important;
+    max-height: 96px !important;
+    height: 96px !important;
+}
+
+.notion-header__icon-wrapper.no-cover.has-icon-image {
+  top: -144px !important;
 }
 
 .notion-text__content {
@@ -50,6 +54,10 @@ h2 {
 
 h3 {
     font-size: 32px !important;
+}
+
+.notion-list-item {
+  font-size: 20px !important;
 }
 
 .notion-collection-gallery {
@@ -168,17 +176,34 @@ h3 {
 }
 
 @media (max-width: 600px) {
-
+  
+    .notion-header__cover.no-cover {
+        max-height: 56px !important;
+        height: 56px !important;
+    }
+    
+    .notion-header__icon-wrapper.no-cover.has-icon-image {
+      top: -128px !important;
+    }
+    
+    .notion-text__content {
+      font-size: 18px !important;
+  }
+  
     h1 {
-        font-size: 40px !important;
+        font-size: 36px !important;
     }
     
     h2 {
-        font-size: 32px !important;
+        font-size: 28px !important;
     }
     
     h3 {
-        font-size: 24px !important;
+        font-size: 20px !important;
+    }
+    
+    .notion-list-item {
+      font-size: 18px !important;
     }
 
     .notion-collection-gallery {
