@@ -1,262 +1,40 @@
-/* See https://sites.super.so/em/style.css */
-
-* {
-    text-decoration: none !important;
-    outline: none !important;
+.notion-breadcrumb__item:first-child {
+  font-weight: bold;
 }
 
-:root {
-    --transition: all .4s cubic-bezier(0.8,0.04,0.4,1) !important;
-    --color-border: var(--color-text-default-light) !important;
-}
-
-.notion-collection__header,
-.notion-property__title__icon-wrapper,
-.notion-callout__icon,
-.notion-header__title {
-    display: none !important;
-}
-
-iframe {
-    background: none !important;
-}
-
-.max-width {
-    max-width: 1024px !important;
-}
-
-.super-content {
-    padding-bottom: 56px !important;
-}
-
-.notion-header__cover.no-cover {
-    max-height: 96px !important;
-    height: 96px !important;
-}
-
-.notion-header__icon-wrapper.no-cover.has-icon-image {
-  top: -144px !important;
-}
-
-.notion-text__content {
-    padding: 0 2px 24px !important;
-    font-size: 20px !important;
-    line-height: 2 !important;
+.notion-header {
+  display: none !important;
 }
 
 h1 {
-    font-size: 48px !important;
+  margin-top: 96px !important;
 }
 
-h2 {
-    font-size: 40px !important;
-}
-
-h3 {
-    font-size: 32px !important;
-}
-
-.notion-list-item {
-  font-size: 20px !important;
+.notion-collection__header-wrapper {
+  display: none !important;
 }
 
 .notion-collection-gallery {
-    border: 1px solid var(--color-border) !important;
-    grid-template-columns: 1fr !important;
-    margin: 80px auto 0 !important;
-    position: relative !important;
-    grid-gap: 0 !important;
-    padding: 0 !important;
-    z-index: 2 !important;
-}
-
-.notion-collection-gallery:last-child {
-    border-bottom: none !important;
+  padding: 0;
+  border: none !important;
+  grid-template-columns: 1fr !important;
 }
 
 .notion-collection-card {
-    border-bottom: 1px solid var(--color-border) !important;
-    box-shadow: 0 40px 80px -20px rgba(0,0,0,0) !important;
-    transition: var(--transition) !important;
-    padding: 40px 80px 40px 40px !important;
-    position: relative !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-}
-
-.notion-collection-card:hover {
-    box-shadow: 0 40px 80px -20px rgba(0,0,0,0.1) !important;
-    background: var(--color-ui-hover-bg) !important;
-}
-
-.notion-collection-card__property {
-    min-height: auto !important;
+    padding: 24px !important;
 }
 
 .notion-property__title {
-    padding: 0 0 12px !important;
-    font-size: 24px !important;
+    font-size: 1.33rem !important;
 }
 
-.notion-property__file {
-    justify-content: center !important;
-    pointer-events: none !important;
-    align-items: center !important;
-    position: absolute !important;
-    display: flex !important;
-    padding: 48px !important;
-    height: 100% !important;
-    right: 0 !important;
-    top: 0 !important;
-}
-
-.notion-property__file div {
-    overflow: visible !important;
-}
-
-.notion-property__file img {
-    transition: var(--transition) !important;
-    opacity: 0.2 !important;
-}
-
-.notion-collection-card:hover .notion-property__file img {
-    transform: scale(0.8) translateX(40px) translateY(-40px) !important;
-    opacity: 1 !important;
-}
-
-.notion-collection-list {
-    border: 1px solid var(--color-border) !important;
-    align-items: center !important;
-    flex-direction: row !important;
-    overflow: visible !important;
-    grid-gap: 0 !important;
-    padding: 0 !important;
-}
-
-.notion-collection-list__item {
-    border-right: 1px solid var(--color-border) !important;
-    transition: var(--transition) !important;
-    justify-content: center !important;
-    position: relative !important;
-    border-radius: 0 !important;
-    padding: 32px !important;
-    margin: 0 !important;
-}
-
-.notion-collection-list__item:last-child {
-    border: none !important;
-}
-
-.notion-collection-list__item:hover {
-    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1) !important;
-    background: var(--color-ui-hover-bg) !important;
-    color: var(--color-text-default) !important;
-}
-
-.notion-collection-list__item a {
-    transition: var(--transition) !important;
-    justify-content: center !important;
-    align-items: center !important;
-    position: absolute !important;
-    display: flex !important;
-    border: none !important;
-    height: 100% !important;
-    width: 100% !important;
-    opacity: 1 !important;
-    left: 0 !important;
-    top: 0 !important;
-}
-
-.notion-collection-list__item a:hover {
-    color: var(--color-text-default) !important;
-}
-
-.notion-collection-list .notion-property__title {
-    display: none !important;
+.notion-property__title__icon-wrapper {
+  display: none !important;
 }
 
 @media (max-width: 600px) {
   
-    .notion-header__cover.no-cover {
-        max-height: 56px !important;
-        height: 56px !important;
-    }
-    
-    .notion-header__icon-wrapper.no-cover.has-icon-image {
-      top: -128px !important;
-    }
-    
-    .notion-text__content {
-      font-size: 18px !important;
+  h1 {
+    margin-top: 32px !important;
   }
-  
-    h1 {
-        font-size: 36px !important;
-    }
-    
-    h2 {
-        font-size: 28px !important;
-    }
-    
-    h3 {
-        font-size: 20px !important;
-    }
-    
-    .notion-list-item {
-      font-size: 18px !important;
-    }
-
-    .notion-collection-gallery {
-        margin: 40px auto 0 !important;
-    }
-
-    .notion-collection-card {
-        padding: 40px 24px !important;
-    }
-
-    .notion-property__title {
-        font-size: 20px !important;
-    }
-
-    .notion-property__file {
-        display: none !important;
-    }
-
-    .notion-embed {
-        margin: -60px auto !important;
-    }
-
-    .notion-collection-list {
-        flex-direction: column !important;
-    }
-
-    .notion-collection-list__item {
-        border-bottom: 1px solid var(--color-border) !important;
-        border-right: none !important;
-    }
-
-}
-
-/* @todo Delete? Not sure what these do */
-
-#block-bcdb396c1ef74989bef292d6fce94b5e .notion-caption {
-    display: none !important;
-}
-
-#block-a8b0bf8feea54452ba1127b8b9af89e1 a {
-    font-size: 14px !important;
-    position: fixed !important;
-    z-index: 9999 !important;
-    border: none !important;
-    right: 22px !important;
-    top: 14px !important;
-}
-
-#block-9e1ece37b4bf4f6f866972a1bdbcb023 p {
-    text-align: center !important;
-    font-size: 14px !important;
-}
-
-#block-87d80f4e17d34ba3b8d3d64b10314b69 {
-    display: none !important;
 }
