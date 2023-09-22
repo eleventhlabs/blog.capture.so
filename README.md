@@ -1,2 +1,2 @@
-# blog.capture.so
+# capture.super.site
 The Capture blog.
